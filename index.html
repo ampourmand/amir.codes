@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amir.codes | iOS Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- iPhone Lock Screen Overlay -->
+  <div class="landing-overlay" id="landingOverlay">
+    <div class="iphone">
+      <div class="notch"></div>
+      <div class="lockscreen" id="lockscreen">
+        <!-- Status Bar -->
+        <div class="status-bar">
+          <div class="status-left">
+            <span id="status-time">9:41</span>
+          </div>
+          <div class="status-right">
+            <span>📶</span>
+            <span>🛜</span>
+            <div class="battery">
+              <div class="battery-level"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="time" id="lock-time">12:00</div>
+        <div class="date" id="lock-date">Monday, January 1</div>
+        <div class="slide-container" id="slide-container">
+          <span class="slide-text" id="slide-text">Slide to unlock</span>
+          <div class="slider" id="slider">
+            <span class="slider-icon">➡️</span>
+          </div>
+        </div>
+        
+        <!-- Wallpaper switcher -->
+        <div class="wallpaper-indicator">
+          <div class="wallpaper-dot active" data-wallpaper="1"></div>
+          <div class="wallpaper-dot" data-wallpaper="2"></div>
+          <div class="wallpaper-dot" data-wallpaper="3"></div>
+          <div class="wallpaper-dot" data-wallpaper="4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="opacity: 0; transition: opacity 0.7s;">
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">Amir.codes</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#app">Published App</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+          <h1>Amir Pourmand</h1>
+          <h2>iOS Developer</h2>
+        </section>
+
+        <!-- About & Projects Grid -->
+        <div class="grid">
+          <section id="about">
+            <div class="card">
+              <h3>📱 About Me</h3>
+              <p>My background is in iOS and full-stack development, with a deep understanding of core CS
+                concepts such as algorithms and data structures. I've worked on team projects, contributed
+                to open source, and enjoy learning new tools and frameworks. <br> </br>Lately, I’ve been expanding
+                into DevOps, working with AWS services and Kubernetes clusters to deploy and manage scalable applications. </p>
+            </div>
+          </section>
+
+          <section id="projects">
+            <div class="card">
+              <h3>💼 Current Projects</h3>
+              <ul>
+                <li><strong>Inventario</strong>: A retail inventory system app designed to streamline stock management for small businesses. Features inventory tracking, analytics, and a user-friendly mobile interface.</li>
+                <li><strong>iSplint</strong>: An iOS app that helps medical students master splint application techniques with ease.</li>
+                <li><strong>Camp Arafah App</strong>: A Swift-powered community app for seamless schedules, talks, and real-time updates at Camp Arafah.</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <!-- Tech Stack -->
+        <section id="tech" class="card" style="margin-bottom: 3rem;">
+          <h3>🧰 Tech Stack</h3>
+          <h3>Technologies & Tools</h3>
+          <ul>
+            <li><strong>iOS Development:</strong> SwiftUI, UIKit, Xcode, Cocoa Touch SDK, AVKit, Core Data, Combine, MVVM</li>
+            <li><strong>Frontend:</strong> React, TailwindCSS, JavaScript, HTML/CSS</li>
+            <li><strong>Backend & Cloud:</strong> Firebase, AWS, Google Cloud, Node.js</li>
+            <li><strong>APIs & Integration:</strong> REST, GraphQL, JSON, XML, XHTML, Postman</li>
+            <li><strong>Programming Languages:</strong> Swift, Python, Java, C++, JavaScript</li>
+          </ul>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+          <div class="stat-card">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Published App</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="52">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="16">0</div>
+            <div class="stat-label">GitHub Repos</div>
+          </div>
+        </section>
+
+        <!-- Published App Section -->
+        <section id="app" class="app-section">
+          <div class="card">
+            <h3>🚀 Published App</h3>
+            <p style="margin: 2rem 0; font-size: 1.1rem; line-height: 1.8;">My latest iOS app for Camp Arafah - a comprehensive community platform that keeps attendees connected with real-time schedules, speaker bios, and instant notifications. Built with Swift and SwiftUI for optimal performance.</p>
+            <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(0, 212, 255, 0.1); border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.2);">
+              <h4 style="color: #00d4ff; margin-bottom: 1rem;">Key Features:</h4>
+              <ul style="text-align: left; list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(0, 212, 255, 0.1);">📅 Real-time schedule updates</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(0, 212, 255, 0.1);">👥 Speaker profiles and bios</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(0, 212, 255, 0.1);">🔔 Push notifications</li>
+                <li style="padding: 0.5rem 0;">📱 Native iOS experience</li>
+              </ul>
+            </div>
+            <a href="https://apps.apple.com/us/app/camp-arafah/id6748761601" target="_blank" class="app-store-btn">Download on the App Store</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Amir Pourmand — Built with ❤️</p>
+    </footer>
+  </div>
+
+  <!-- Phone Contact Overlay -->
+  <div class="phone-contact-overlay">
+    <div class="phone-contact">
+      <div class="phone-notch"></div>
+      <button class="close-phone">×</button>
+      <h3>📞 Contact Me</h3>
+      <div class="phone-contact-links">
+        <a href="mailto:contact@amir.codes" target="_blank" class="phone-contact-link">
+          📧 Email
+        </a>
+        <a href="https://linkedin.com/in/amirpourmand" target="_blank" class="phone-contact-link">
+          🔗 LinkedIn
+        </a>
+        <a href="https://github.com/ampourmand" target="_blank" class="phone-contact-link">
+          💻 GitHub
+        </a>
+      </div>
+      <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Tap outside to close</p>
+    </div>
+  </div>
+
+  <!-- Lock Screen Button -->
+  <div class="lock-screen-btn" title="Return to Lock Screen">
+    🔒
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
